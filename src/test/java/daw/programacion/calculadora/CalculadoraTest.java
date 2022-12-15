@@ -1,10 +1,9 @@
 package daw.programacion.calculadora;
 
-import static org.junit.Assert.*;
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
 
 public class CalculadoraTest {
-    @Test
     public void dosSumarDosEsCuatro() {
         int expected = 4;
         int numero1 = 2, numero2 = 2;
@@ -18,7 +17,7 @@ public class CalculadoraTest {
         int expected = 10;
         int numero1 = 3, numero2 = 7;
         Calculadora calc = new Calculadora();
-        assertTrue("3 mas 7 deberia de ser 10", expected == calc.sumar(numero1, numero2));
+        assertTrue(expected == calc.sumar(numero1, numero2), "3 mas 7 deberia de ser 10");
 
     }
 
@@ -27,7 +26,7 @@ public class CalculadoraTest {
         int expected = 100;
         int numero1 = 3, numero2 = 7;
         Calculadora calc = new Calculadora();
-        assertFalse("3 mas 7 no deberia de ser 100", expected == calc.sumar(numero1, numero2));
+        assertFalse(expected == calc.sumar(numero1, numero2), "3 mas 7 no deberia de ser 100");
 
     }
 
@@ -45,7 +44,7 @@ public class CalculadoraTest {
         int expected = -4;
         int numero1 = 3, numero2 = 7;
         Calculadora calc = new Calculadora();
-        assertTrue("3 menos 7 deberia de ser -4", expected == calc.restar(numero1, numero2));
+        assertTrue(expected == calc.restar(numero1, numero2), "3 menos 7 deberia de ser -4");
 
     }
 
@@ -54,7 +53,7 @@ public class CalculadoraTest {
         int expected = 100;
         int numero1 = 3, numero2 = 7;
         Calculadora calc = new Calculadora();
-        assertFalse("3 mas 7 no deberia de ser 100", expected == calc.restar(numero1, numero2));
+        assertFalse(expected == calc.restar(numero1, numero2), "3 mas 7 no deberia de ser 100");
 
     }
 
@@ -72,7 +71,7 @@ public class CalculadoraTest {
         int expected = 21;
         int numero1 = 3, numero2 = 7;
         Calculadora calc = new Calculadora();
-        assertTrue("3 x 7 deberia de ser 21", expected == calc.multiplicar(numero1, numero2));
+        assertTrue(expected == calc.multiplicar(numero1, numero2), "3 x 7 deberia de ser 21");
 
     }
 
@@ -81,7 +80,7 @@ public class CalculadoraTest {
         int expected = 100;
         int numero1 = 3, numero2 = 7;
         Calculadora calc = new Calculadora();
-        assertFalse("3 mas 7 no deberia de ser 100", expected == calc.multiplicar(numero1, numero2));
+        assertFalse(expected == calc.multiplicar(numero1, numero2), "3 mas 7 no deberia de ser 100");
 
     }
 
